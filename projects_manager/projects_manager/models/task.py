@@ -1,4 +1,4 @@
-from django.db.models import Model, CASCADE, PROTECT
+from django.db.models import Model, CASCADE, PROTECT, SET_NULL
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy
 from projects_manager.libs.common import fields_contructor
@@ -26,7 +26,9 @@ SCHEMA_TASK = [
         "type": "ForeignKey",
         "to": Developer,
         "to_field": 'id',
-        "on_delete": PROTECT
+        "on_delete": SET_NULL,
+        "null":True, 
+        "blank":True
     },
     {
         "field": "status",
@@ -41,6 +43,7 @@ SCHEMA_TASK = [
         "unique": True,
         "null": False,
         "default": "Default Description"
+        
     }
 ]
 
