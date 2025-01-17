@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: django_app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+  
+networks:
+  app-network:
+    external: true
+
+volumes:
+  postgres_data:

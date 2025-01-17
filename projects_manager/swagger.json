@@ -1,0 +1,84 @@
+{
+    "v1": {
+      "programadores": {
+        "GET": "DeveloperViewSet",
+        "POST": "DeveloperViewSet",
+        "PUT": "DeveloperViewSet",
+        "PATCH": "DeveloperViewSet",
+        "DELETE": "DeveloperViewSet"
+      },
+      "senioridade_dev": {
+        "GET": "LevelDeveloperViewSet",
+        "POST": "LevelDeveloperViewSet",
+        "PUT": "LevelDeveloperViewSet",
+        "PATCH": "LevelDeveloperViewSet",
+        "DELETE": "LevelDeveloperViewSet"
+      },
+      "status_dev": {
+        "GET": "StatusDeveloperViewSet",
+        "POST": "StatusDeveloperViewSet",
+        "PUT": "StatusDeveloperViewSet",
+        "PATCH": "StatusDeveloperViewSet",
+        "DELETE": "StatusDeveloperViewSet"
+      },
+      "tecnologia_dev": {
+        "GET": "DeveloperTechnologyViewSet",
+        "POST": "DeveloperTechnologyViewSet",
+        "PUT": "DeveloperTechnologyViewSet",
+        "PATCH": "DeveloperTechnologyViewSet",
+        "DELETE": "DeveloperTechnologyViewSet"
+      },
+      "projetos": {
+        "GET": "ProjectViewSet",
+        "POST": "ProjectViewSet",
+        "PUT": "ProjectViewSet",
+        "PATCH": "ProjectViewSet",
+        "DELETE": "ProjectViewSet"
+      },
+      "status_projeto": {
+        "GET": "StatusProjectViewSet",
+        "POST": "StatusProjectViewSet",
+        "PUT": "StatusProjectViewSet",
+        "PATCH": "StatusProjectViewSet",
+        "DELETE": "StatusProjectViewSet"
+      },
+      "tecnologia_projeto": {
+        "GET": "ProjectTechnologyViewSet",
+        "POST": "ProjectTechnologyViewSet",
+        "PUT": "ProjectTechnologyViewSet",
+        "PATCH": "ProjectTechnologyViewSet",
+        "DELETE": "ProjectTechnologyViewSet"
+      },
+      "alocacao": {
+        "GET": "TaskViewSet",
+        "POST": "TaskViewSet",
+        "PUT": "TaskViewSet",
+        "PATCH": "TaskViewSet",
+        "DELETE": "TaskViewSet"
+      },
+      "status_alocacao": {
+        "GET": "StatusTaskViewSet",
+        "POST": "StatusTaskViewSet",
+        "PUT": "StatusTaskViewSet",
+        "PATCH": "StatusTaskViewSet",
+        "DELETE": "StatusTaskViewSet"
+      },
+      "tecnologias": {
+        "GET": "TechnologyViewSet",
+        "POST": "TechnologyViewSet",
+        "PUT": "TechnologyViewSet",
+        "PATCH": "TechnologyViewSet",
+        "DELETE": "TechnologyViewSet"
+      },
+      "token": {
+        "POST": "TokenObtainPairView"
+      },
+      "token/refresh": {
+        "POST": "TokenRefreshView"
+      },
+      "register": {
+        "POST": "RegisterView"
+      }
+    }
+  }
+  
